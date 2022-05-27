@@ -96,7 +96,7 @@ impl RelayMux {
 impl Builder for RelayMux {
     async fn register_validator(
         &self,
-        registration: &mut SignedValidatorRegistration,
+        registration: &mut [SignedValidatorRegistration],
     ) -> Result<(), BuilderError> {
         // TODO (and below) do this concurrently?
         let mut responses = vec![];

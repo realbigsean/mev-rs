@@ -1,3 +1,5 @@
+extern crate core;
+
 mod builder;
 #[cfg(feature = "api")]
 mod builder_api_server;
