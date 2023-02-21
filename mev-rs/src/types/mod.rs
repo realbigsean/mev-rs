@@ -81,7 +81,6 @@ impl SignedBuilderBid {
 
 #[derive(Debug)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-#[cfg_attr(feature = "serde", serde(tag = "version", content = "data"))]
 #[cfg_attr(feature = "serde", serde(rename_all = "lowercase"))]
 pub enum SignedBlindedBeaconBlock {
     Bellatrix(bellatrix::SignedBlindedBeaconBlock),
